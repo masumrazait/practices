@@ -1,7 +1,12 @@
 Feature: Login test
 
+  Background:
+    Given setup the entries in the database
+    When launch the browser
+    And hit the home page url of banking site
+
   @SmokeTest
-  Scenario Outline: User Login page
+  Scenario Outline: Admin Page Default Login
     Given User is on login page
     When User enters "<username>" and "<password>"
     Then User is navigated to the home page
