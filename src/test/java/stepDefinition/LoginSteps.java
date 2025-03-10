@@ -42,4 +42,20 @@ public class LoginSteps {
         System.out.println("Cards are displayed");
     }
 
+    @Given("setup the entries in the database")
+    public void SetupEntries() {
+        System.out.println("**************************");
+
+    }
+
+    @When("launch the browser")
+    public void LanunchBrower() {
+        System.out.println("launch the browser");
+    }
+
+    @Then("hit the home page url of banking site")
+    public void hitHomePage() {
+        System.out.println("hit the home page url of banking site");
+    }
+
 }
