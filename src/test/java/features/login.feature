@@ -12,7 +12,7 @@ Feature: Login test
       | raza     | pass2    |
       | delhi    | pass3    |
 
-@RegressionTest
+  @RegressionTest
   Scenario: User Page Default Sign up
     Given User is on Practice landing page
       | Masum          |
@@ -20,3 +20,15 @@ Feature: Login test
       | 1234567890     |
     Then Home Page is displayed
     And Cards are displayed
+
+  @Test
+  Scenario Outline: User Login page with different data
+    Given User is on login page
+    When User enters "<username>" and "<password>"
+    Then User is navigated to the home page
+
+    Examples:
+      | username | password   |
+      | masum    | passmasum1 |
+      | raza     | passraza2  |
+      | delhi    | passdelhi3 |
