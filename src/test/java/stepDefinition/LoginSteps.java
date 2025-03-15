@@ -58,4 +58,23 @@ public class LoginSteps {
         System.out.println("hit the home page url of banking site");
     }
 
+
+    //Another Scenario Explanation
+
+    @Given("User should enter these details")
+    public void user_should_be_enter_these_details() {
+        System.out.println("User should be enter the details");
+
+    }
+
+    @Then("User should be able to book the flight")
+    public void user_should_be_able_to_book_the_flight(List<String>dataTable) {
+        System.out.println("user enter the details: " + dataTable.get(0));
+        System.out.println("user enter the details: " + dataTable.get(1));
+        System.out.println("user enter the details: " + dataTable.get(2));
+        System.out.println("user enter the details: " + dataTable.get(3));
+        System.out.println("User should be able to book the flight"+dataTable.get(4));
+        System.out.println("User should be able to book the flight"+dataTable.get(5));
+        System.out.println("User should be able to book the flight"+dataTable.get(6));
+    }
 }
