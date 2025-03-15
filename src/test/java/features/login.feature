@@ -37,3 +37,15 @@ Feature: Login test
       | masum    | passmasum1 |
       | raza     | passraza2  |
       | delhi    | passdelhi3 |
+
+  @TestUserRegister
+  Scenario: verify the flight booking page with different data
+    Given User should enter these details
+    Then User should be able to book the flight
+      | Masum               |
+      | masumraza@gmail.com |
+      | 123654789           |
+      | bangalore           |
+      | 560001              |
+      | 18                  |
+      | 23/2/2025           |
